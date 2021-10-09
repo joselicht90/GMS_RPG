@@ -5,6 +5,7 @@ function PlayerCollision(){
 	//when you write a variable as VAR it only last for this frame.
 	var _collision = false;
 	
+	
 	//horizontal tiles
 	if(tilemap_get_at_pixel(collisionMap, x + hSpeed, y))
 	{
@@ -20,7 +21,7 @@ function PlayerCollision(){
 	}
 	//horizontal move commit
 	x += hSpeed;
-	
+
 	//vertical tiles
 	if(tilemap_get_at_pixel(collisionMap, x, y + vSpeed))
 	{

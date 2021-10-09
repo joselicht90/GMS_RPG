@@ -7,6 +7,8 @@ keyActivate = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0
 keyAttack = keyboard_check(ord("E")) || gamepad_button_check(0,gp_face3);
 keyItem = keyboard_check(vk_control) || gamepad_button_check(0,gp_face4);
 
+//this is to pass front and behind other objects
+depth = -y;
 
 //this is to calculate de distance of the vector between where the player is and were it want to be.
 //its important for diagonal movement
@@ -14,7 +16,7 @@ inputDirection = point_direction(0,0,keyRight-keyLeft,keyDown-keyUp);
 inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 
 //execute de script of the current state in this frame
-if(!global.gamePause) script_execute(state);
+script_execute(state);
 
 
 

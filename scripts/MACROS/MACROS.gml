@@ -8,8 +8,18 @@
 #macro CELL_WIDTH 32
 #macro CELL_HEIGHT 32
 #macro FLOOR -5
-#macro WALL -6
-#macro VOID -7
+#macro WATER -6
+#macro WALL -7
+#macro VOID -8
+
+#macro CANTIDAD_BIOMAS 5
+
+
+#macro LLANURA 5
+#macro PLAIN 6
+#macro BOSQUE 7
+#macro MONTANA 8
+#macro DESIERTO 9
 
 #macro NORTH 1
 #macro WEST 2
